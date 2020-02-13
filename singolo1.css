@@ -1,7 +1,116 @@
 @font-face {
-  font-family: lato; 
-  src: url(assets/fonts/Lato/Lato-Regular.ttf); 
- }
- h1{
-   font-family: lato;
- }
+  font-family: lato;
+  src: url(assets/fonts/Lato/Lato-Regular.ttf);
+  font-family: lato-bold;
+}
+
+* {
+  font-family: lato;
+  margin: 0;
+}
+
+.mainContent {
+  margin: auto;
+  width: 1020px;
+}
+
+header {
+  background-color: #2d303a;
+  height: 95px;
+  color: #FFF;
+  width: 1020px;
+}
+
+header h1 {
+  font-size: 25px;
+  margin-left: 40px;
+  margin-top: 40px;
+  float: left;
+  line-height: 6px;
+  color: #ffffff;
+  font-family: "Lato";
+  font-weight: 700;
+  text-align: left;
+}
+
+.redstar {
+  color: #f06c64;
+}
+
+.headerMenu {
+  float: right;
+  margin-top: 38px;
+  margin-right: 29px;
+}
+
+.headerMenu li {
+  list-style: none;
+  display: inline;
+  position: relative;
+  font-size: 12px;
+  margin: 0 13px;
+  text-transform: uppercase;
+}
+
+.headerMenu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.headerMenu a:hover {
+  color: #f06c64;
+  cursor: pointer;
+}
+
+/* 2 block */
+main {
+  margin: 0;
+}
+
+.sliderBlock {
+  background-color: #f06c64;
+  height: 588px;
+  border-bottom: 12px solid #f06c64;
+}
+
+.phones {
+  position: relative;
+}
+
+.phone {
+  position: absolute;
+}
+.phone img{
+  z-index: 2;
+}
+
+.iphone-v {
+  top: 34px;
+  left: 113px;
+}
+
+.shadow-v {
+  background-image: url("/assets/images/shadow-v.png");
+  opacity: 0.3;
+  position: absolute;
+  top: 0px;
+  width: 240px;
+  height: 483px;
+  z-index: 1;
+}
+
+.iphone-h {
+  top: 154px;
+  left: 424px;
+}
+.shadow-h {
+  background-image: url("/assets/images/shadow-h.png");
+  opacity: 0.3;
+  position: absolute;
+  top: 0px;
+  left: 2px
+  width: 483px;
+  height: 240px;
+  z-index: 1; 
+}
