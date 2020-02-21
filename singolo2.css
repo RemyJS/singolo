@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'lato';
+  src: url(assets/fonts/Lato/Lato-Regular.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'lato-bold';
+  src: url(assets/fonts/Lato/Lato-Bold.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'lato-light';
+  src: url(assets/fonts/Lato/Lato-Light.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "lato", sans-serif;
+}
+
+/* .wrapper {
+  margin: auto;
+  width: 1020px;
+} */
+.portfolio__background {
+  background-color: #2d303a;
+}
+
+.portfolio {
+  color: #666d89;
+  padding: 60px 40px 72px;
+}
+
+.portfolio__header h1 {
+  font-size: 30px;
+  font-family: "lato-bold", sans-serif;
+}
+
+.portfolio__header_text {
+  font-family: "lato-light", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #767e9e;
+  margin-top: 17px;
+}
+
+.portfolio__header_buttons {
+  margin-top: 12px;
+  margin-left: 1px;
+}
+
+.portfolio__header_buttons li {
+  cursor: pointer;
+  margin-right: 6px;
+  list-style-type: none;
+  display: inline-block;
+}
+
+.portfolio__header_buttons a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  height: 20px;
+  display: block;
+  color: #767e9e;
+  border: 1px solid #666d89;
+  padding: 0 6.5px;
+  border-radius: 5px;
+}
+.portfolio__header_buttons a:hover {
+  color: #dedede;
+  border: 1px solid #dedede;
+}
