@@ -100,7 +100,5 @@
 
 
 .p_images>img {
-  object-fit: none;
-  object-position: center;
-  display: none;
+
 }
