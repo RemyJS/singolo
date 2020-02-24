@@ -89,6 +89,8 @@
   grid-template-columns: repeat(4, 220px);
   column-gap: 20px;
   row-gap: 20px;
+  max-height: 600px;
+  overflow: hidden;
 }
 
 .p_images {
@@ -127,7 +129,7 @@
 }
 
 .about__us_person {
-  margin-top: 44px;
+  margin-top: 45px;
   display: grid;
   grid-template-columns: repeat(3, 300px);
   column-gap: 20px;
@@ -141,7 +143,7 @@
 }
 
 .person_text {
-  margin-top: 19px;
+  margin-top: 18px;
 }
 
 .person_text h2 {
@@ -171,9 +173,6 @@
 .person_icons i {
   font-size: 20px;
   color: #656d89;
-  /* width: 32px;
-  height: 32px;
-  border-radius: 50%; */
 }
 
 .p_icon {
