@@ -25,12 +25,12 @@
           </aside>
           <div class="contacts">
             <aside>
-              <form action="" method="post">
-                <input class="inputs" type="text" placeholder="Name (Required)">
-                <input class="inputs" type="email" placeholder="Email (Required)">
-                <input class="inputs" type="text" placeholder="Subject">
-                <!-- <input class="inputs description-msg"type="text" placeholder="placeholder"> -->
-                <textarea  class="inputs description-msg"  placeholder="Describe your project in detail..."></textarea>
+              <form action="#" method="post">
+                <input class="inputs" type="text"  name ="name" pattern= "[A-z]+" placeholder="Name (Required)"/>
+                <input class="inputs" type="email" name ="email" pattern ="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email (Required)"/>
+                <input class="inputs" type="text"  name ="subject" placeholder="Subject"/>
+                <textarea  class="inputs description-msg"  name ="description" placeholder="Describe your project in detail..."></textarea>
+                <button class ='btn-sub' type="submit">Submit form</button>
               </form>
             </aside>
             <aside class="information">
@@ -41,8 +41,8 @@
               </p>
               <div class="address">
                 <span><i class="icon-location"></i> Elm St. 14/05 Lost City </span>
-                <span><i class="icon-phone"></i>03528 331 86 35</span>
-                <span><i class="icon-mail"></i>info@singolo.com </span>
+                <span><a href="tel:+03528 331 86 35"><i class="icon-phone"></i>03528 331 86 35</a></span>
+                <span><a href="mailto:info@singolo.com"><i class="icon-mail"></i>info@singolo.com</a></span>
               </div>
             </aside>
           </div>

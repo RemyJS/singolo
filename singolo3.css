@@ -36,7 +36,7 @@
 }
 
 .qoute {
-  padding: 67px 40px 48.5px;
+  padding: 67px 40px 12px;
 }
 
 .qoute__text h1 {
@@ -74,6 +74,10 @@
   border: 1px solid #d6564f;
   border-radius: 5px;
   margin-bottom: 16px;
+  color: #f0d8d9;
+}
+.inputs:invalid {
+  border: 2px double #a8302a;
 }
 .inputs::placeholder{
   color: #f48c8f;
@@ -83,7 +87,19 @@
   resize: none;
   padding-top:6px;
 }
-
+.btn-sub {
+  padding: 0 15px;
+  font-size: 12px;
+  line-height: 22px;
+  cursor: pointer;
+  height: 36px;
+  background-color: #d6564f;
+  outline: none;
+  border: 1px solid #d6564f;
+  border-radius: 5px;
+ 
+  color: #f0d8d9;
+}
 .information {
   width: 300px;
   height: 175px;
@@ -114,4 +130,8 @@
 .address span {
   display: block;
   margin-bottom: 6.5px;
+}
+.address a {
+  text-decoration: none;
+  color: inherit;
 }
