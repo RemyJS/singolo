@@ -159,8 +159,11 @@
   height: 30px;
   border-radius: 50%;
   border: 1px solid #666d89;
+  cursor: pointer;
 }
-
+.social_icon:hover {
+  color: white;
+}
 .social_icon i {
   font-family: 'icomoon' !important;
 }
