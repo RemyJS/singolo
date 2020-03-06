@@ -1,0 +1,128 @@
+@font-face {
+  font-family: 'icomoon';
+  src:
+    url('fonts/icomoon.ttf?g08w22') format('truetype'),
+    url('fonts/icomoon.woff?g08w22') format('woff'),
+    url('fonts/icomoon.svg?g08w22#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-star:before {
+  content: "\e901";
+}
+.icon-favorite:before {
+  content: "\e901";
+}
+.icon-bulb:before {
+  content: "\e902";
+}
+.icon-lamp:before {
+  content: "\e902";
+}
+.icon-idea:before {
+  content: "\e902";
+}
+.icon-heart:before {
+  content: "\e903";
+}
+.icon-love:before {
+  content: "\e903";
+}
+.icon-like:before {
+  content: "\e903";
+}
+.icon-bubble:before {
+  content: "\e904";
+}
+.icon-comment:before {
+  content: "\e904";
+}
+.icon-chat:before {
+  content: "\e904";
+}
+.icon-talk:before {
+  content: "\e904";
+}
+.icon-phone:before {
+  content: "\e905";
+}
+.icon-tablet:before {
+  content: "\e905";
+}
+.icon-mobile:before {
+  content: "\e905";
+}
+.icon-pen:before {
+  content: "\e900";
+}
+.icon-pencil:before {
+  content: "\e900";
+}
+.icon-write:before {
+  content: "\e900";
+}
+.icon-blog:before {
+  content: "\e900";
+}
+.icon-social-facebook:before {
+  content: "\e906";
+}
+.icon-social-twitter:before {
+  content: "\e908";
+}
+.icon-social-linkedin:before {
+  content: "\e909";
+}
+.icon-social-facebook1:before {
+  content: "\e907";
+}
+.icon-linkedin:before {
+  content: "\e90a";
+}
+.icon-google:before {
+  content: "\e90f";
+}
+.icon-mail1:before {
+  content: "\e90d";
+}
+.icon-phone1:before {
+  content: "\e90e";
+}
+.icon-google1:before {
+  content: "\e910";
+}
+.icon-twitter1:before {
+  content: "\ea96";
+}
+.icon-mail2:before {
+  content: "\e90b";
+}
+.icon-mail:before {
+  content: "\e90c";
+}
+.icon-contact:before {
+  content: "\e90c";
+}
+.icon-email:before {
+  content: "\e90c";
+}
+.icon-location:before {
+  content: "\e947";
+}
