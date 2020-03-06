@@ -426,7 +426,11 @@ main {
 .qoute {
     padding: 67px 40px 12px;
 }
-
+@-moz-document url-prefix() {
+    .qoute {
+        padding: 67px 40px 15px;
+    }
+}
 .qoute__text h1 {
     font-size: 30px;
     line-height: 18px;
