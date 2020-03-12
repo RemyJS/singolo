@@ -314,9 +314,11 @@ main {
 
 .portfolio {
     color: #666d89;
-    padding: 60px 40px 66px;
+    padding: 60px 30px 61px;
 }
-
+.portfolio__header {
+    padding: 0 5px;
+}
 .portfolio__header h1 {
     font-size: 30px;
     font-family: "lato-bold", sans-serif;
@@ -362,13 +364,14 @@ main {
 /* images */
 
 .portfolio__images {
-    margin-top: 19px;
+    margin-top: 13px;
     display: grid;
-    grid-template-columns: repeat(4, 220px);
+    grid-template-columns:  repeat(4, 220px) ;
     column-gap: 20px;
     row-gap: 20px;
-    max-height: 600px;
+    max-height: 606px;
     overflow: hidden;
+    padding: 5px;
 }
 
 .p_images {
@@ -376,6 +379,10 @@ main {
     height: 187px;
     background-color: #464b5e;
     overflow: hidden;
+}
+.p_checked {
+    margin: -5px;
+    border: 5px solid #F06C64;
 }
 
 /* about us */

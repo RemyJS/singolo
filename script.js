@@ -39,3 +39,53 @@ function showSlides(n) {
     slidesBgc.style.borderColor = slides[mainSlide].dataset['bgc'];
 }
 showSlides(mainSlide);
+
+//portfolio 
+
+let pButtons = document.querySelectorAll('.portfolio__header_buttons a');
+let pImages = document.querySelectorAll('.p_images');
+
+pButtons.forEach(el => {// portfolio buttons
+    el.addEventListener('click',(event)=>{
+        event.preventDefault();
+        function shake(){
+            let images = document.querySelectorAll('.portfolio__images img');
+            let src = [];
+            let save;//сохраняем ссылку изображения
+            images.forEach((el,i) => {
+                if( el.closest('.p_checked')){
+                    pImages.forEach(el => el.classList.remove('p_checked'));
+                    save = el.src;
+                }
+                src.push(el.src)
+            });
+            
+
+            for(let i = src.length - 1; i > 0; i--){
+                let j = Math.floor(Math.random()*(i + 1));
+                let temp = src[j];
+                src[j] = src[i];
+                src[i] = temp;
+            }
+            
+            images.forEach((el,i) => {
+                el.src = src[i];
+                if(src[i] == save){
+                    // рамка добавляется блоку в котором картинка с адрессом save 
+                    let pimage = el.closest('.p_images');
+                    pimage.classList.add('p_checked');                    
+                }
+            }); 
+
+        };
+        shake();
+    });
+});
+
+
+pImages.forEach(elem => {//portfolio border
+    elem.addEventListener('click',() => {
+        pImages.forEach(el => el.classList.remove('p_checked'));
+        elem.classList.add('p_checked');
+    })
+})
