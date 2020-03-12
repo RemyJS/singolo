@@ -114,7 +114,7 @@ main {
 }
 
 .phones {
-    position: relative;
+    position: relative;  
 }
 
 .phone {
@@ -127,7 +127,7 @@ main {
 
 .iphone-v {
     top: 53px;
-    left: 113px;
+    left: 55px;
 }
 
 .shadow-v {
@@ -149,7 +149,7 @@ main {
 }
 .iphone-h {
     top: 173px;
-    left: 424px;
+    left: 366px;
 }
 
 .shadow-h {
@@ -167,6 +167,44 @@ main {
     top: 14px;
     left: 60px;
 }
+.slider{
+    display: flex;
+    user-select: none; 
+}
+ .slider_window {
+    height: 588px; 
+} 
+.slide {
+    display: block;
+    height: 588px;
+    width: 900px;
+
+    animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-name: slide;
+    -webkit-animation-duration:1s;
+}
+
+
+@keyframes slide {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@-webkit-keyframes slide {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+.arrow {
+    width: 58px;
+}
 .arrow div {
     cursor: pointer;
     background-repeat: no-repeat;
@@ -179,7 +217,7 @@ main {
 .arrow-r {
     background-image: url(assets/images/chev-right.png);
     float: right;
-    margin-right: 40px;
+    margin-right: 35px;
 }
 
 .arrow-r:hover {
