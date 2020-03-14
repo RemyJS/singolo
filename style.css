@@ -37,9 +37,12 @@ html {
 /* .mainContent {} */
 
 header {
+    position: fixed;
+    z-index: 5;
     background-color: #2d303a;
     height: 95px;
     color: #FFF;
+    width: 100%;
 }
 
 h1 {
@@ -111,6 +114,7 @@ main {
 }
 
 .sliderBlock__bg {
+     padding-top: 95px; /*for header fixed */
     background-color: #f06c64;
     height: 588px;
     border-bottom: 12px solid #f06c64;
@@ -324,7 +328,7 @@ main {
 
 .portfolio {
     color: #666d89;
-    padding: 60px 30px 61px;
+    padding: 60px 34px 61px;
 }
 
 .portfolio__header {
@@ -548,7 +552,7 @@ main {
     top: 2797px;
     left: 0;
     width: 100%;
-    height: 112%;
+    height: 78%;
     background: #f0d8d97a;
 }
 
