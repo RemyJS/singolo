@@ -6,10 +6,11 @@ h_menu.addEventListener('click', (event) => {
     event.target.classList.add('headerActive');
 });
 
-let phones = document.querySelectorAll('.phone');
+let phones = document.querySelectorAll('.phone img');
 
 phones.forEach(el => el.addEventListener('click', (event) => {
-    let off = el.querySelector('.display-off');
+    let phone = el.closest('.phone');
+    let off = phone.querySelector('.display-off');
     off.hidden = !off.hidden;
 }));
 
