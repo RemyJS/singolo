@@ -98,12 +98,13 @@ let mbg = document.querySelector('.msg__bg');
 
 let theme = document.querySelector('#theme');
 let text = document.querySelector('#discript');
-
+let form = document.querySelector('.contacts form');
 btnOk.addEventListener('click', () => {
 
 
     theme.innerHTML ='';
     text.innerHTML ='';
+    form.reset();
     mbg.classList.add('msg_hidden');
 });
 btnSub.addEventListener('click', (event) => {
