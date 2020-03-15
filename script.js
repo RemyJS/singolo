@@ -120,16 +120,16 @@ btnSub.addEventListener('click', (event) => {
 
         let sv = '';
         if (subject.value) {
-            sv = `Тема: ${subject.value}`;
+            sv = `Subject: ${subject.value}`;
         } else {
-            sv = `Без темы`;
+            sv = `Without subject`;
         };
 
         let dv = '';
         if (description.value) {
-            dv = `Описание: ${description.value}`;
+            dv = `Description: ${description.value}`;
         } else {
-            dv = `Без описания`;
+            dv = `Without description`;
         }
         theme.append(sv);
         text.append(dv);
