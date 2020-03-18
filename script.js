@@ -102,12 +102,12 @@ let text = document.querySelector('#discript');
 let form = document.querySelector('.contacts form');
 btnOk.addEventListener('click', () => {
 
-
     theme.innerHTML ='';
     text.innerHTML ='';
     form.reset();
     mbg.classList.add('msg_hidden');
 });
+
 btnSub.addEventListener('click', (event) => {
     let name = document.querySelector('input[name = "name"]');
     let mail = document.querySelector('input[name="email"]');
