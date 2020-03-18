@@ -114,7 +114,8 @@ main {
 }
 
 .sliderBlock__bg {
-     padding-top: 95px; /*for header fixed */
+    padding-top: 95px;
+    /*for header fixed */
     background-color: #f06c64;
     height: 588px;
     border-bottom: 12px solid #f06c64;
@@ -185,19 +186,21 @@ main {
 }
 
 .slider_window {
-    height: 588px;
+    height: inherit;
 }
 
 .slide {
     display: block;
-    height: 588px;
+    height: inherit;
     width: 900px;
     animation-name: slide;
     animation-duration: 1s;
     -webkit-animation-name: slide;
     -webkit-animation-duration: 1s;
 }
-
+.slide2 img {
+    width: 900px;
+}
 @keyframes slide {
     from {
         opacity: .4
@@ -700,4 +703,163 @@ main {
 
 .social_icon i {
     font-family: 'icomoon' !important;
+}
+
+/* responsive */
+
+@media (max-width: 1020px) {
+    .wrapper {
+        width: 100%;
+        margin: 0;
+    }
+    .slide {
+        width: 85vw;
+    }
+    .slide2 img {
+        width: 85vw;
+    }
+    .sliderBlock__bg {
+        padding-top: 95px;
+        background-color: #f06c64;
+        height: 57vw;
+        border-bottom: 12px solid #f06c64;
+    }
+    .arrow{
+        width: 49px;
+    }
+    .arrow div {
+        margin-top: 25vh;
+    }
+    .iphone-v {
+        top: 5vw;
+        left: 5vh;
+    }
+    .shadow-v {
+        background:none;
+        width: 23.6vw;
+        height: 35.6vh; 
+    }
+    .shadow-v img {
+        width: 21vw;
+        -webkit-box-shadow: 14px 15px 22px 4px rgba(0, 0, 0, 0.53);
+        box-shadow: 14px 15px 22px 4px rgba(0, 0, 0, 0.53);
+        border-radius: 23px;
+    }
+    .display-off {
+        position: inherit;
+        display: none;
+    }
+
+    .iphone-h {
+        top: 13vh;
+        left: 36vw;
+    }
+    .shadow-h {
+        background-size: cover;
+        background:none;
+        width: 48.4vw;
+        height: 18.1vh;
+    }
+    .shadow-h img {
+        width: 46vw;
+        -webkit-box-shadow: 14px 15px 22px 4px rgba(0, 0, 0, 0.53);
+        box-shadow: 14px 15px 22px 4px rgba(0, 0, 0, 0.53);
+        border-radius: 28px;
+    }
+    .display-h-off {
+        background-color: black;
+        width: 333px;
+        height: 188px;
+        position: inherit;
+        top: 14px;
+        left: 60px;
+    }
+    .ourService {
+        padding: 44px 40px 30px;
+    }
+    .skills {
+        height: 416px;
+    }
+    .skills article {
+        width: 317px;
+    }
+    .portfolio {  
+        padding: 60px 34px 52px;
+    }
+    
+    .portfolio__images {
+        margin-top: 22px;
+        display: grid;
+        grid-template-columns: repeat(3, 28vw);
+        column-gap: 20px;
+        row-gap: 20px;
+        max-height: 1100px;
+        overflow: hidden;
+        padding: 5px;
+    }
+    .p_images {
+        width: 28vw;
+        height: auto;
+        background-color: #464b5e;
+        overflow: hidden;
+    }
+    .p_images img {
+        width: inherit;
+        height: inherit;
+    }
+
+    .person_icons {
+        margin-top: 5px;
+    }
+    .person_photo {
+        width: 28vw;
+        height: 28vw;
+        background-color: #464b5e;
+    }
+    .person_photo img {
+        width: inherit;
+        height: inherit;
+    }
+
+    .about__us {
+        padding: 62px 40px 69px;
+    }
+    .about__us_person {
+        margin-top: 36px;
+        display: grid;
+        grid-template-columns: repeat(3, 28vw);
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+    .qoute {
+        padding: 62px 40px 39px;
+    }
+    .contacts {
+        margin-top: 19px;
+        display: grid;
+        grid-template-columns: 57vw 28vw;
+        grid-column-gap: 20px;
+    }
+    .inputs {
+        width: 52vw;
+        margin-bottom: 16px;
+    }
+    .address {
+        margin-top: 5px;
+    }
+    .information {
+        width: inherit;
+    }
+    .information h3 {
+        margin-top: 7px;
+    }
+    .description-msg {
+        height: 145px;
+    }
+    .copyright {
+        justify-content: start;
+    }
+    .social {
+        margin-left: 21.8vw;
+    }
 }
