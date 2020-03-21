@@ -66,6 +66,14 @@ header h1 {
     color: #f06c64;
 }
 
+#menu__toggle {
+    opacity: 0;
+}
+
+.menu__btn {
+    display: none;
+}
+
 .headerMenu {
     float: right;
     margin-top: 38px;
@@ -198,9 +206,11 @@ main {
     -webkit-animation-name: slide;
     -webkit-animation-duration: 1s;
 }
+
 .slide2 img {
     width: 900px;
 }
+
 @keyframes slide {
     from {
         opacity: .4
@@ -724,7 +734,7 @@ main {
         height: 57vw;
         border-bottom: 12px solid #f06c64;
     }
-    .arrow{
+    .arrow {
         width: 49px;
     }
     .arrow div {
@@ -735,9 +745,9 @@ main {
         left: 5vh;
     }
     .shadow-v {
-        background:none;
+        background: none;
         width: 23.6vw;
-        height: 35.6vh; 
+        height: 35.6vh;
     }
     .shadow-v img {
         width: 21vw;
@@ -749,14 +759,13 @@ main {
         position: inherit;
         display: none;
     }
-
     .iphone-h {
         top: 13vh;
         left: 36vw;
     }
     .shadow-h {
         background-size: cover;
-        background:none;
+        background: none;
         width: 48.4vw;
         height: 18.1vh;
     }
@@ -783,10 +792,9 @@ main {
     .skills article {
         width: 317px;
     }
-    .portfolio {  
+    .portfolio {
         padding: 60px 34px 52px;
     }
-    
     .portfolio__images {
         margin-top: 22px;
         display: grid;
@@ -807,7 +815,6 @@ main {
         width: inherit;
         height: inherit;
     }
-
     .person_icons {
         margin-top: 5px;
     }
@@ -820,7 +827,6 @@ main {
         width: inherit;
         height: inherit;
     }
-
     .about__us {
         padding: 62px 40px 69px;
     }
@@ -861,5 +867,110 @@ main {
     }
     .social {
         margin-left: 21.8vw;
+    }
+}
+
+/* mobile 375px <= width < 768px */
+
+@media (min-width: 375px) and (max-width: 768px) {
+    header {
+        height: 71px;
+    }
+    /* стилизуем кнопку */
+    .menu__btn {
+        display: flex;
+        position: absolute;
+        width: 20px;
+        height: 25px;
+        left: 22.5px;
+        top: 23.5px;
+        cursor: pointer;
+        z-index: 1;
+    }
+    /* добавляем "гамбургер" */
+    .headerMenu {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+        width: 272px;
+        height: 100%;
+        margin: 0;
+        padding: 232px 0;
+        list-style: none;
+        text-align: left;
+        background-color: #2d303a;
+        box-shadow: 300px 0px 6px 142px rgba(0, 0, 0, 0.60);
+    }
+    /* элементы меню */
+    .headerMenu li+li::before {
+        content: "";
+    }
+    .menu__item {
+        display: block;
+        font-size: 24px;
+        line-height: 29px;
+        margin-left: 71px;
+        margin-bottom: 27px;
+    }
+    #menu__toggle:checked~.menu__btn>span {
+        transform: rotate(90deg);
+    }
+    #menu__toggle:checked~.headerMenu {
+        visibility: visible;
+        left: 0;
+    }
+    .logo {
+        margin: 0;
+        float: none;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.03em;
+        text-align: center;
+        margin-top: 6px;
+        margin-left: 27px;
+    }
+    #menu__toggle:checked~.logo {
+        position: absolute;
+        z-index: 3;
+        left: 71px;
+        top: 24px;
+    }
+    .headerMenu li {
+        margin: 0;
+    }
+
+    /* slider */
+    .sliderBlock__bg {
+        height: 50vw;
+        border-bottom: 2px solid #f06c64;
+    }
+    .arrow div {
+        margin-top: 19.5vw;
+    }
+    .arrow-l {
+        float: none;
+        margin-left: 2vw;
+    }
+    .iphone-v {
+        top: 0;
+        left: 2vh;
+    }
+    .iphone-h {
+        top: 4.5vh;
+        left: 34vw;
+    }
+    .shadow-v img {
+        width: 20vw;
+        -webkit-box-shadow: 14px 15px 22px 4px rgba(0, 0, 0, 0.53);
+        box-shadow: 14px 15px 22px 4px rgba(0, 0, 0, 0.53);
+        border-radius: 7px;
+    }
+    .shadow-h img {
+        width: 43vw;
+        -webkit-box-shadow: 14px 15px 22px 4px rgba(0, 0, 0, 0.53);
+        box-shadow: 14px 15px 22px 4px rgba(0, 0, 0, 0.53);
+        border-radius: 7px;
     }
 }
