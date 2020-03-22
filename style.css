@@ -561,11 +561,11 @@ main {
 }
 
 .msg__bg {
-    position: absolute;
-    top: 2797px;
+    position: fixed;
+    top: 0;
     left: 0;
     width: 100%;
-    height: 78%;
+    height: 100%;
     background: #f0d8d97a;
 }
 
@@ -808,7 +808,7 @@ main {
     .p_images {
         width: 28vw;
         height: auto;
-        background-color: #464b5e;
+        background-color: #2d303a;
         overflow: hidden;
     }
     .p_images img {
@@ -872,7 +872,7 @@ main {
 
 /* mobile 375px <= width < 768px */
 
-@media (min-width: 375px) and (max-width: 768px) {
+@media (max-width: 767px) {
     header {
         height: 71px;
     }
@@ -928,8 +928,8 @@ main {
         line-height: 24px;
         letter-spacing: -0.03em;
         text-align: center;
-        margin-top: 6px;
-        margin-left: 27px;
+        margin-top: 5px;
+        margin-left: -6px;
     }
     #menu__toggle:checked~.logo {
         position: absolute;
@@ -940,10 +940,9 @@ main {
     .headerMenu li {
         margin: 0;
     }
-
     /* slider */
     .sliderBlock__bg {
-        height: 50vw;
+        height: 52vw;
         border-bottom: 2px solid #f06c64;
     }
     .arrow div {
@@ -952,6 +951,9 @@ main {
     .arrow-l {
         float: none;
         margin-left: 2vw;
+    }
+    .arrow-r {
+        margin-right: 11px;
     }
     .iphone-v {
         top: 0;
@@ -973,4 +975,158 @@ main {
         box-shadow: 14px 15px 22px 4px rgba(0, 0, 0, 0.53);
         border-radius: 7px;
     }
+    /* outservice */
+    .ourService_background {
+        border-bottom: none;
+    }
+    .ourService {
+        padding: 28px 30px 13px;
+    }
+    .ourService p {
+        line-height: 30px;
+    }
+    .skills {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 41px 32px 0;
+        height: auto;
+    }
+    .skills article {
+        width: 80vw;
+        height: 107px;
+        margin-bottom: 13px;
+    }
+    .skills__info {
+        width: 59vw;
+        height: 123px;
+        font-size: 12px;
+        line-height: 22px;
+        margin-left: 4vw;
+    }
+    /* part2 */
+    .portfolio__background {
+        border-bottom: none;
+    }
+    .portfolio {
+        padding: 41px 6.7vw 35px;
+    }
+    .portfolio__header_buttons {
+        margin-top: 16px;
+        margin-left: 0px;
+    }
+    .portfolio__images {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 38vw);
+        column-gap: 6vw;
+        row-gap: 3vw;
+        max-height: 148vw;
+        overflow: hidden;
+        padding: 5px;
+    }
+    .p_images {
+        width: 40vw;
+        height: auto;
+        background-color: #2d303a;
+        overflow: hidden;
+    }
+    /* about us */
+    .about__us_background {
+        border-bottom: none;
+    }
+    .about__us {
+        padding: 41px 8.3vw 43px;
+    }
+    .about__us_person {
+        margin-top: 6.6vw;
+        display: grid;
+        grid-template-columns: repeat(1, 84vw);
+        row-gap: 8.8vw;
+    }
+    .person_photo {
+        width: 83.8vw;
+        height: auto;
+        background-color: #f1f1f1;
+    }
+    .person_text {
+        margin-top: 4vw;
+    }
+    .person_text p {
+        margin-top: 1vw;
+    }
+    .person_icons {
+        margin-top: 3vw;
+    }
+    /* part 3 get quote*/
+    .qoute__background {    
+        border-bottom: none;
+    }
+    .qoute {
+        padding: 14vw 8vw 9.6vw;
+    }
+    .contacts {
+        margin-top: 14vw;
+        display: grid;
+        grid-template-columns: repeat(1,84vw);
+        grid-row-gap: 8.9vw;
+    }
+
+    .inputs {
+        width: 83.2vw;
+        margin-bottom: 3.6vw;
+        padding: 0;
+    }
+    .description-msg {
+        height: 41vw;
+        margin-bottom: 2.9vw;
+    }
+    .btn-sub {
+        padding: 0;
+        font-size: 16px;
+        line-height: 22px;
+        cursor: pointer;
+        height: 13vw;
+        width: 84vw;
+        background-color: #FBC65F;
+        outline: none;
+        color: #886A30;
+        border: none;
+        border-radius: 5px;
+    }
+    .information  {
+      height: auto;
+    }
+    .information h3 {
+        margin-top: 0;
+    }
+    .information p {
+        margin-top: 0;
+    }
+    .address {
+        margin-top: 4vw;
+    }
+    .address span {
+        display: block;
+        margin-bottom: 2.7vw;
+    }
+    /* footer */
+    .copyright {
+        display: flex;
+        justify-content: center;
+        padding: 22px 40px;
+        color: #666d89;
+    }
+    .copyright-by {
+        display: none;
+    }
+    .social {
+        margin-left:0;
+    }
+}
+/* 320px < 375px */
+@media (max-width: 375px) {
+
 }
