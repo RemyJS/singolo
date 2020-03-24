@@ -793,7 +793,11 @@ main {
         width: 317px;
     }
     .portfolio {
-        padding: 60px 34px 52px;
+        /* padding: 60px 34px 52px; */
+        padding: 7.8vw 4.4vw 6.8vw;
+    }
+    .portfolio__header_text {
+        width: 83vw;
     }
     .portfolio__images {
         margin-top: 22px;
@@ -819,9 +823,9 @@ main {
         margin-top: 5px;
     }
     .person_photo {
-        width: 28vw;
-        height: 28vw;
-        background-color: #464b5e;
+        width: 28.5vw;
+        height: 28.5vw;
+        background-color: #f2f2f2;
     }
     .person_photo img {
         width: inherit;
@@ -831,43 +835,81 @@ main {
         padding: 62px 40px 69px;
     }
     .about__us_person {
-        margin-top: 36px;
+        margin-top: 40px;
         display: grid;
         grid-template-columns: repeat(3, 28vw);
-        column-gap: 20px;
-        row-gap: 20px;
+        column-gap: 18px;
+        /* row-gap: 20px; */
+        padding-left: 2px;
     }
-    .qoute {
-        padding: 62px 40px 39px;
+    .person_text {
+        margin-top: 12px;
     }
-    .contacts {
-        margin-top: 19px;
-        display: grid;
-        grid-template-columns: 57vw 28vw;
-        grid-column-gap: 20px;
+    .person_text p {
+        margin-top: 4px;
+        font-size: 12px;
+        line-height: 21px;
+        color: #767e9e;
+        font-family: "lato";
+        font-weight: 400;
+        text-align: left;
     }
-    .inputs {
-        width: 52vw;
-        margin-bottom: 16px;
+    .person_icons {
+        margin-top: 10px;
     }
-    .address {
-        margin-top: 5px;
-    }
-    .information {
-        width: inherit;
-    }
-    .information h3 {
-        margin-top: 7px;
-    }
-    .description-msg {
-        height: 145px;
-    }
-    .copyright {
-        justify-content: start;
-    }
-    .social {
-        margin-left: 21.8vw;
-    }
+}
+
+.qoute__background {
+    border-bottom: 5.8px solid #ea676b;
+}
+
+.qoute {
+    padding: 8.3vw 5.6vw 6.4vw;
+}
+
+.contacts {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: 57vw 27vw;
+    grid-column-gap: 4vw;
+}
+
+.inputs {
+    width: 53vw;
+    margin-bottom: 12px;
+}
+
+.address {
+    margin-top: 12px;
+}
+
+.information {
+    width: inherit;
+}
+
+.information h3 {
+    margin-top: 0;
+}
+
+.information p {
+    margin-top: 3px;
+    line-height: 22px;
+}
+
+.address {
+    margin-top: 12px;
+}
+
+.description-msg {
+    height: 145px;
+}
+
+.copyright-by {
+    display: none;
+}
+
+.copyright {
+    justify-content: center;
 }
 
 /* mobile 375px <= width < 768px */
@@ -928,8 +970,8 @@ main {
         line-height: 24px;
         letter-spacing: -0.03em;
         text-align: center;
-        margin-top: 5px;
-        margin-left: -6px;
+        margin-top: 6px;
+        margin-left: 11px;
     }
     #menu__toggle:checked~.logo {
         position: absolute;
@@ -1038,7 +1080,7 @@ main {
         border-bottom: none;
     }
     .about__us {
-        padding: 41px 8.3vw 43px;
+        padding: 42px 8.3vw 50px;
     }
     .about__us_person {
         margin-top: 6.6vw;
@@ -1061,7 +1103,7 @@ main {
         margin-top: 3vw;
     }
     /* part 3 get quote*/
-    .qoute__background {    
+    .qoute__background {
         border-bottom: none;
     }
     .qoute {
@@ -1070,10 +1112,9 @@ main {
     .contacts {
         margin-top: 14vw;
         display: grid;
-        grid-template-columns: repeat(1,84vw);
+        grid-template-columns: repeat(1, 84vw);
         grid-row-gap: 8.9vw;
     }
-
     .inputs {
         width: 83.2vw;
         margin-bottom: 3.6vw;
@@ -1096,8 +1137,8 @@ main {
         border: none;
         border-radius: 5px;
     }
-    .information  {
-      height: auto;
+    .information {
+        height: auto;
     }
     .information h3 {
         margin-top: 0;
@@ -1123,10 +1164,10 @@ main {
         display: none;
     }
     .social {
-        margin-left:0;
+        margin-left: 0;
     }
 }
-/* 320px < 375px */
-@media (max-width: 375px) {
 
-}
+/* 320px < 375px */
+
+@media (max-width: 375px) {}
