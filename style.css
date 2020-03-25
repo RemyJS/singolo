@@ -1589,21 +1589,21 @@ main {
         margin-right: 11px;
     }
     .iphone-v {
-        top: 0;
-        left: 2vh;
+        top: -1vw;
+        left: 3.4vw;
     }
     .iphone-h {
-        top: 4.5vh;
+        top: 10.5vw;
         left: 34vw;
     }
     .shadow-v img {
-        width: 20vw;
+        width: 20.7vw;
         -webkit-box-shadow: 14px 15px 22px 4px rgba(0, 0, 0, 0.53);
         box-shadow: 14px 15px 22px 4px rgba(0, 0, 0, 0.53);
         border-radius: 7px;
     }
     .shadow-h img {
-        width: 43vw;
+        width: 45vw;
         -webkit-box-shadow: 14px 15px 22px 4px rgba(0, 0, 0, 0.53);
         box-shadow: 14px 15px 22px 4px rgba(0, 0, 0, 0.53);
         border-radius: 7px;
