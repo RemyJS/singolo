@@ -1660,16 +1660,16 @@ main {
     .portfolio__images {
         margin-top: 20px;
         display: grid;
-        grid-template-columns: repeat(2, 38vw);
-        column-gap: 6vw;
-        row-gap: 3vw;
+        grid-template-columns: repeat(2, 40.3vw);
+        column-gap: 3.1vw;
+        row-gap: 3.8vw;
         max-height: 148vw;
         overflow: hidden;
         padding: 5px;
     }
     .p_images {
-        width: 40vw;
-        height: auto;
+        width: 40.3vw;
+        height: 34vw;
         background-color: #2d303a;
         overflow: hidden;
     }
