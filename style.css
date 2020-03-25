@@ -228,7 +228,6 @@ main {
     color: #666d89;
 }
 
-
 .skills__info {
     width: 219px;
     height: 123px;
@@ -388,7 +387,6 @@ main {
     margin-top: 22px;
 }
 
-
 .p_icon {
     font-size: 20px;
     align-items: center;
@@ -402,21 +400,27 @@ main {
     cursor: pointer;
     color: #656d89;
 }
+
 .p_icon:hover {
-    color:white;
+    color: white;
 }
-.p_icon:nth-child(1):hover{
+
+.p_icon:nth-child(1):hover {
     background: #1877f2;
 }
-.p_icon:nth-child(2):hover{
+
+.p_icon:nth-child(2):hover {
     background: #f06c64;
 }
-.p_icon:nth-child(3):hover{
+
+.p_icon:nth-child(3):hover {
     background: #5fa8dd;
 }
-.p_icon:nth-child(4):hover{
+
+.p_icon:nth-child(4):hover {
     background: #006599;
 }
+
 /* part3 */
 
 .qoute__background {
@@ -427,11 +431,13 @@ main {
 .qoute {
     padding: 67px 40px 12px;
 }
+
 @-moz-document url-prefix() {
     .qoute {
         padding: 67px 40px 15px;
     }
 }
+
 .qoute__text h1 {
     font-size: 30px;
     line-height: 18px;
@@ -471,7 +477,7 @@ main {
 }
 
 .inputs:invalid {
-    background-color:#a8302a;
+    background-color: #a8302a;
 }
 
 .inputs::placeholder {
@@ -572,6 +578,7 @@ main {
 .social_icon i {
     font-family: 'icomoon' !important;
 }
+
 @font-face {
     font-family: 'lato';
     src: url(assets/fonts/Lato/Lato-Regular.ttf);
@@ -1300,7 +1307,7 @@ main {
         margin-top: 35px;
         margin-right: 5vw;
     }
-    .headerMenu li {   
+    .headerMenu li {
         margin: 0;
         margin-left: 3.5vw;
     }
@@ -1320,7 +1327,7 @@ main {
         width: 49px;
     }
     .arrow div {
-       margin-top: 27.9vw;
+        margin-top: 27.9vw;
     }
     .arrow-l {
         margin-left: 4vw;
@@ -1332,7 +1339,6 @@ main {
         top: 5.2vw;
         left: 4.5vw;
     }
-    
     .shadow-v {
         background: none;
         width: 23.6vw;
@@ -1346,7 +1352,25 @@ main {
     }
     .display-off {
         position: inherit;
-        display: none;
+        /* display: none; */
+    }
+    .display-v-off {
+        background-color: black;
+        width: 18.6vw;
+        height: 33.1vw;
+        position: inherit;
+        top: 6.1vw;
+        left: 1.4vw;
+        border-radius: 2px;
+    }
+    .display-h-off {
+        background-color: black;
+        width: 33vw;
+        height: 18.6vw;
+        position: inherit;
+        top: 1.3vw;
+        left: 5.8vw;
+        border-radius: 2px;
     }
     .iphone-h {
         top: 17.1vw;
@@ -1364,21 +1388,13 @@ main {
         box-shadow: 14px 15px 22px 4px rgba(0, 0, 0, 0.53);
         border-radius: 22px;
     }
-    .display-h-off {
-        background-color: black;
-        width: 333px;
-        height: 188px;
-        position: inherit;
-        top: 14px;
-        left: 60px;
-    }
     .ourService {
         padding: 44px 40px 30px;
     }
     .skills {
         height: 416px;
-        display: grid;     
-        grid-template-columns: repeat(2,46vw);
+        display: grid;
+        grid-template-columns: repeat(2, 46vw);
         row-gap: 1.6vw;
         padding: 0 40px 32px;
     }
@@ -1456,44 +1472,35 @@ main {
     .qoute__background {
         border-bottom: 5.8px solid #ea676b;
     }
-    
     .qoute {
         padding: 8.3vw 5.6vw 6.4vw;
     }
-    
     .contacts {
         margin-top: 24px;
         display: grid;
         grid-template-columns: 57vw 27vw;
         grid-column-gap: 4vw;
     }
-    
     .inputs {
         width: 53vw;
         margin-bottom: 12px;
     }
-    
     .address {
         margin-top: 12px;
     }
-    
     .information {
         width: inherit;
     }
-    
     .information h3 {
         margin-top: 0;
     }
-    
     .information p {
         margin-top: 3px;
         line-height: 22px;
     }
-    
     .address {
         margin-top: 12px;
     }
-    
     .description-msg {
         height: 145px;
     }
@@ -1502,15 +1509,12 @@ main {
     }
 }
 
-
-
 /* mobile 375px <= width < 768px */
 
 @media (max-width: 767px) {
     header {
         height: 71px;
     }
-
     .menu__btn {
         display: flex;
         position: absolute;
@@ -1521,7 +1525,6 @@ main {
         cursor: pointer;
         z-index: 1;
     }
-
     .headerMenu {
         display: block;
         position: fixed;
@@ -1537,7 +1540,6 @@ main {
         background-color: #2d303a;
         box-shadow: 300px 0px 6px 142px rgba(0, 0, 0, 0.60);
     }
-
     .headerMenu li+li::before {
         content: "";
     }
