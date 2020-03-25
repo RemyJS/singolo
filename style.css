@@ -1311,12 +1311,19 @@ main {
         width: 49px;
     }
     .arrow div {
-        margin-top: 25vh;
+       margin-top: 27.9vw;
+    }
+    .arrow-l {
+        margin-left: 4vw;
+    }
+    .arrow-r {
+        margin-right: 1vw;
     }
     .iphone-v {
-        top: 5vw;
-        left: 5vh;
+        top: 5.2vw;
+        left: 4.1vh;
     }
+    
     .shadow-v {
         background: none;
         width: 23.6vw;
@@ -1333,8 +1340,8 @@ main {
         display: none;
     }
     .iphone-h {
-        top: 13vh;
-        left: 36vw;
+        top: 17.1vw;
+        left: 35vw;
     }
     .shadow-h {
         background-size: cover;
@@ -1343,10 +1350,10 @@ main {
         height: 18.1vh;
     }
     .shadow-h img {
-        width: 46vw;
+        width: 45.2vw;
         -webkit-box-shadow: 14px 15px 22px 4px rgba(0, 0, 0, 0.53);
         box-shadow: 14px 15px 22px 4px rgba(0, 0, 0, 0.53);
-        border-radius: 28px;
+        border-radius: 22px;
     }
     .display-h-off {
         background-color: black;
@@ -1361,29 +1368,36 @@ main {
     }
     .skills {
         height: 416px;
+        display: grid;     
+        grid-template-columns: repeat(2,46vw);
+        row-gap: 1.6vw;
+        padding: 0 40px 32px;
     }
     .skills article {
         width: 317px;
     }
     .portfolio {
         /* padding: 60px 34px 52px; */
-        padding: 7.8vw 4.4vw 6.8vw;
+        padding: 7.8vw 4.4vw 7.8vw;
     }
     .portfolio__header_text {
         width: 83vw;
     }
+    .portfolio__header_buttons li {
+        margin-right: 7px;
+    }
     .portfolio__images {
-        margin-top: 22px;
+        margin-top: 23px;
         display: grid;
         grid-template-columns: repeat(3, 28vw);
         column-gap: 20px;
-        row-gap: 20px;
+        row-gap: 17px;
         max-height: 1100px;
         overflow: hidden;
         padding: 5px;
     }
     .p_images {
-        width: 28vw;
+        width: 28.1vw;
         height: auto;
         background-color: #2d303a;
         overflow: hidden;
@@ -1408,7 +1422,7 @@ main {
         padding: 62px 40px 69px;
     }
     .about__us_person {
-        margin-top: 40px;
+        margin-top: 38px;
         display: grid;
         grid-template-columns: repeat(3, 28vw);
         column-gap: 18px;
@@ -1474,13 +1488,8 @@ main {
     .description-msg {
         height: 145px;
     }
-    
-    .copyright-by {
-        display: none;
-    }
-    
-    .copyright {
-        justify-content: center;
+    .social_icon {
+        margin-left: 5.4px;
     }
 }
 
