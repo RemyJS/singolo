@@ -1295,6 +1295,14 @@ main {
         width: 100%;
         margin: 0;
     }
+    .headerMenu {
+        margin-top: 35px;
+        margin-right: 5vw;
+    }
+    .headerMenu li {   
+        margin: 0;
+        margin-left: 3.5vw;
+    }
     .slide {
         width: 85vw;
     }
@@ -1501,7 +1509,7 @@ main {
     header {
         height: 71px;
     }
-    /* стилизуем кнопку */
+
     .menu__btn {
         display: flex;
         position: absolute;
@@ -1512,7 +1520,7 @@ main {
         cursor: pointer;
         z-index: 1;
     }
-    /* добавляем "гамбургер" */
+
     .headerMenu {
         display: block;
         position: fixed;
@@ -1528,7 +1536,7 @@ main {
         background-color: #2d303a;
         box-shadow: 300px 0px 6px 142px rgba(0, 0, 0, 0.60);
     }
-    /* элементы меню */
+
     .headerMenu li+li::before {
         content: "";
     }
