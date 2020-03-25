@@ -62,7 +62,7 @@ header h1 {
 .headerMenu {
     float: right;
     margin-top: 38px;
-    margin-right: 25px;
+    margin-right: 38px;
 }
 
 .headerMenu li {
@@ -71,7 +71,8 @@ header h1 {
     position: relative;
     font-size: 12px;
     line-height: 6px;
-    margin: 0 13px;
+    margin: 0;
+    margin-left: 26px;
     text-transform: uppercase;
 }
 
@@ -1329,7 +1330,7 @@ main {
     }
     .iphone-v {
         top: 5.2vw;
-        left: 4.1vh;
+        left: 4.5vw;
     }
     
     .shadow-v {
@@ -1637,7 +1638,11 @@ main {
         height: 123px;
         font-size: 12px;
         line-height: 22px;
-        margin-left: 4vw;
+        margin-left: 5vw;
+    }
+    .skills__icons {
+        margin-top: 5px;
+        margin-left: -4px;
     }
     /* part2 */
     .portfolio__background {
