@@ -1538,7 +1538,7 @@ main {
         list-style: none;
         text-align: left;
         background-color: #2d303a;
-        box-shadow: 300px 0px 6px 142px rgba(0, 0, 0, 0.60);
+        box-shadow: 300px 0px 6px 100vw rgba(0, 0, 0, 0.60);
     }
     .headerMenu li+li::before {
         content: "";
