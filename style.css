@@ -1581,15 +1581,33 @@ main {
         height: 52vw;
         border-bottom: 2px solid #f06c64;
     }
+    .slider {
+        display: flex;
+        user-select: none;
+        justify-content: space-around;
+        padding: 0 3vw;
+    }
+    .slide {
+        width: 60vw;
+        margin-right: 26vw;
+    }
+    
+    .arrow {
+        width: 5.6vw;
+    }
     .arrow div {
         margin-top: 19.5vw;
+        width: 4vw;
+        height: 7vw;
     }
     .arrow-l {
         float: none;
-        margin-left: 2vw;
+        margin-left: 0;
     }
     .arrow-r {
-        margin-right: 11px;
+        float: none;
+        margin-right: 0;
+        /* margin-left: 4.6vw; */
     }
     .iphone-v {
         top: -1vw;
