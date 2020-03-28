@@ -1473,7 +1473,7 @@ main {
         border-bottom: 5.8px solid #ea676b;
     }
     .qoute {
-        padding: 8.3vw 5.6vw 6.4vw;
+        padding: 8.3vw 5.6vw 5.3vw;
     }
     .contacts {
         margin-top: 24px;
@@ -1481,9 +1481,12 @@ main {
         grid-template-columns: 57vw 27vw;
         grid-column-gap: 4vw;
     }
+    .contacts form{
+        margin-left: -3px;
+    }
     .inputs {
         width: 53vw;
-        margin-bottom: 12px;
+        margin-bottom: 13px;
     }
     .address {
         margin-top: 12px;
@@ -1502,7 +1505,21 @@ main {
         margin-top: 12px;
     }
     .description-msg {
-        height: 145px;
+        height: 149px;
+        margin-bottom: 15px;
+    }
+    .btn-sub {
+        border: none;
+        padding: 0;
+        outline: none;
+        width: 136px;
+        height: 38px;
+        background: #FBC65F;
+        border-radius: 5px;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #886A30;
     }
     .social_icon {
         margin-left: 5.4px;
@@ -1591,7 +1608,6 @@ main {
         width: 60vw;
         margin-right: 26vw;
     }
-    
     .arrow {
         width: 5.6vw;
     }
@@ -1731,14 +1747,17 @@ main {
         grid-template-columns: repeat(1, 84vw);
         grid-row-gap: 8.9vw;
     }
+    .contacts form {
+        margin-left: 0px;
+    }
     .inputs {
         width: 83.2vw;
-        margin-bottom: 3.6vw;
+        margin-bottom: 3.2vw;
         padding: 0;
     }
     .description-msg {
-        height: 41vw;
-        margin-bottom: 2.9vw;
+        height: 41.1vw;
+        margin-bottom: 3.6vw;
     }
     .btn-sub {
         padding: 0;
